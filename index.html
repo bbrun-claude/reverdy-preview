@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reverdy Charpente — Charpente, Couverture et Ossature Bois à Allevard (38)</title>
+<meta name="description" content="Reverdy Charpente, charpentier couvreur à Allevard-les-Bains en Isère. Charpente traditionnelle, couverture, zinguerie, maisons ossature bois, escaliers. Devis gratuit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#1E3A5F;--navy-light:#2A5080;--blue:#4A8DC8;--blue-light:#6BA3D6;--wood:#C8944A;--wood-light:#D4A862;--gray-50:#F7F8FA;--gray-100:#EEF0F3;--gray-500:#7A8290;--gray-700:#3D4450;--gray-900:#1A1E25;--white:#fff}
+body{font-family:'Source Sans 3',sans-serif;color:var(--gray-700);line-height:1.65}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;color:var(--gray-900)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--navy);text-decoration:none}
+
+/* NAV */
+.nav{background:var(--white);box-shadow:0 1px 6px rgba(0,0,0,.07);position:sticky;top:0;z-index:100}
+.nav-inner{max-width:1140px;margin:0 auto;padding:.7rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{height:48px;width:auto;border-radius:3px}
+.nav-links{display:flex;gap:1.6rem;list-style:none}
+.nav-links a{color:var(--gray-700);font-weight:600;font-size:.92rem;transition:color .2s}
+.nav-links a:hover{color:var(--wood)}
+.nav-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--gray-700)}
+
+/* HERO */
+.hero{position:relative;height:72vh;min-height:420px;display:flex;align-items:center;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;background:url('img/chalet1.jpg') center/cover no-repeat;filter:brightness(.5)}
+.hero-content{position:relative;z-index:2;color:var(--white);padding:0 1.5rem;max-width:1140px;margin:0 auto;width:100%}
+.hero h1{font-size:2.6rem;font-weight:700;line-height:1.2;margin-bottom:1rem;max-width:650px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.hero p{font-size:1.1rem;margin-bottom:2rem;max-width:550px;opacity:.93}
+.btn{display:inline-block;padding:.8rem 2rem;border-radius:4px;font-weight:600;font-size:.95rem;transition:all .2s;cursor:pointer}
+.btn-wood{background:var(--wood);color:var(--white)}
+.btn-wood:hover{background:var(--wood-light);transform:translateY(-1px)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-light)}
+.btn-white{background:var(--white);color:var(--navy);font-weight:700}
+.btn-white:hover{background:var(--gray-100)}
+
+/* SECTIONS */
+.section{padding:4.5rem 1.5rem}
+.section-title{text-align:center;font-size:1.9rem;margin-bottom:.5rem}
+.section-sub{text-align:center;color:var(--gray-500);max-width:600px;margin:0 auto 2.5rem;font-size:1rem}
+.container{max-width:1140px;margin:0 auto}
+
+/* INTRO */
+.intro{background:var(--gray-50)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:center}
+.intro-img{border-radius:6px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.intro-img img{width:100%;height:320px;object-fit:cover}
+.intro-text h2{font-size:1.7rem;margin-bottom:.8rem}
+.intro-text p{margin-bottom:.8rem;color:var(--gray-500)}
+.accent{color:var(--wood);font-weight:700}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc{background:var(--white);border-radius:6px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.05);transition:transform .2s,box-shadow .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.svc-img{height:180px;overflow:hidden}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.svc:hover .svc-img img{transform:scale(1.04)}
+.svc-body{padding:1.2rem 1.3rem}
+.svc-body h3{font-size:1.05rem;margin-bottom:.4rem}
+.svc-body p{font-size:.9rem;color:var(--gray-500);line-height:1.55}
+
+/* GALLERY */
+.gallery{background:var(--gray-50)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.gal-item{border-radius:6px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gal-item:hover img{transform:scale(1.05)}
+
+/* CTA */
+.cta{background:var(--navy);color:var(--white);text-align:center;padding:3.5rem 1.5rem}
+.cta h2{font-size:1.7rem;margin-bottom:.8rem;color:var(--white)}
+.cta p{max-width:550px;margin:0 auto 1.5rem;opacity:.9;font-size:1rem}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.contact-info h3{font-size:1.2rem;margin-bottom:1.2rem}
+.c-item{display:flex;align-items:flex-start;gap:.8rem;margin-bottom:1.2rem}
+.c-item .ico{font-size:1.2rem;flex-shrink:0;width:36px;height:36px;background:var(--navy);color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.c-item strong{display:block;color:var(--gray-900);margin-bottom:.15rem;font-size:.95rem}
+.c-item span,.c-item a{color:var(--gray-500);font-size:.92rem}
+.contact-map{border-radius:6px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.07);min-height:320px}
+.contact-map iframe{width:100%;height:100%;min-height:320px;border:0}
+
+/* FOOTER */
+.footer{background:var(--gray-900);color:rgba(255,255,255,.6);padding:1.8rem 1.5rem;text-align:center;font-size:.82rem}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+ .intro-grid,.contact-grid{grid-template-columns:1fr}
+ .services-grid{grid-template-columns:1fr 1fr}
+ .gallery-grid{grid-template-columns:1fr 1fr}
+ .hero h1{font-size:2rem}
+}
+@media(max-width:600px){
+ .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--white);padding:1rem 1.5rem;box-shadow:0 4px 12px rgba(0,0,0,.1)}
+ .nav-links.open{display:flex}
+ .nav-toggle{display:block}
+ .services-grid,.gallery-grid{grid-template-columns:1fr}
+ .hero{min-height:350px;height:55vh}
+ .hero h1{font-size:1.5rem}
+ .section{padding:3rem 1rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+ <div class="nav-inner">
+  <img src="img/logo.jpg" alt="Reverdy Charpente" class="nav-logo">
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  <ul class="nav-links">
+   <li><a href="#services">Nos métiers</a></li>
+   <li><a href="#realisations">Réalisations</a></li>
+   <li><a href="#contact">Contact</a></li>
+  </ul>
+ </div>
+</nav>
+
+<section class="hero">
+ <div class="hero-bg"></div>
+ <div class="hero-content">
+  <h1>Charpentier couvreur dans les Alpes depuis plus de 30 ans</h1>
+  <p>Charpente traditionnelle, couverture, ossature bois, zinguerie et escaliers à Allevard-les-Bains et en Isère.</p>
+  <a href="#contact" class="btn btn-wood">Demander un devis gratuit</a>
+ </div>
+</section>
+
+<section class="section intro">
+ <div class="container">
+  <div class="intro-grid">
+   <div class="intro-img">
+    <img src="img/charpente1.jpg" alt="Chantier charpente traditionnelle en montagne - Reverdy Charpente">
+   </div>
+   <div class="intro-text">
+    <h2>Le savoir-faire du <span class="accent">bois</span> en montagne</h2>
+    <p>Implantée à Allevard-les-Bains au coeur du massif de Belledonne, Reverdy Charpente est une entreprise artisanale spécialisée dans le travail du bois depuis plus de trois décennies.</p>
+    <p>Notre équipe de charpentiers expérimentés intervient sur tous types de projets : charpentes traditionnelles, maisons à ossature bois, chalets, couverture, zinguerie et escaliers sur mesure.</p>
+    <p>Nous accompagnons les particuliers et les collectivités de l'Isère et des départements voisins dans la réalisation de leurs projets, du devis à la livraison.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="services">
+ <div class="container">
+  <h2 class="section-title">Nos métiers</h2>
+  <p class="section-sub">Un savoir-faire complet autour du bois et de la toiture.</p>
+  <div class="services-grid">
+   <div class="svc">
+    <div class="svc-img"><img src="img/charpente1.jpg" alt="Charpente traditionnelle" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Charpente traditionnelle</h3>
+     <p>Conception et pose de charpentes en bois massif. Fermes, pannes, chevrons, assemblages traditionnels.</p>
+    </div>
+   </div>
+   <div class="svc">
+    <div class="svc-img"><img src="img/ossature1.jpg" alt="Maison ossature bois" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Ossature bois</h3>
+     <p>Construction de maisons et extensions à ossature bois. Levage, montage et mise hors d'eau.</p>
+    </div>
+   </div>
+   <div class="svc">
+    <div class="svc-img"><img src="img/chalet1.jpg" alt="Chalets bois" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Chalets</h3>
+     <p>Réalisation de chalets en bois en montagne. Structures adaptées au terrain et au climat alpin.</p>
+    </div>
+   </div>
+   <div class="svc">
+    <div class="svc-img"><img src="img/charpente2.jpg" alt="Couverture toiture" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Couverture</h3>
+     <p>Pose et réfection de toitures : tuiles, ardoises, bac acier. Isolation et étanchéité.</p>
+    </div>
+   </div>
+   <div class="svc">
+    <div class="svc-img"><img src="img/escalier1.jpg" alt="Escaliers bois sur mesure" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Escaliers</h3>
+     <p>Fabrication et pose d'escaliers en bois sur mesure, mezzanines et garde-corps bois-métal.</p>
+    </div>
+   </div>
+   <div class="svc">
+    <div class="svc-img"><img src="img/salle1.jpg" alt="Zinguerie et travaux spéciaux" loading="lazy"></div>
+    <div class="svc-body">
+     <h3>Zinguerie</h3>
+     <p>Gouttières, descentes, chéneaux en zinc. Habillage de rives et travaux de finition en toiture.</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section gallery" id="realisations">
+ <div class="container">
+  <h2 class="section-title">Nos réalisations</h2>
+  <p class="section-sub">Découvrez quelques-uns de nos chantiers en Isère et dans les Alpes.</p>
+  <div class="gallery-grid">
+   <div class="gal-item"><img src="img/chalet1.jpg" alt="Chalet bois en montagne" loading="lazy"></div>
+   <div class="gal-item"><img src="img/charpente1.jpg" alt="Pose de charpente" loading="lazy"></div>
+   <div class="gal-item"><img src="img/ossature1.jpg" alt="Levage ossature bois" loading="lazy"></div>
+   <div class="gal-item"><img src="img/charpente2.jpg" alt="Charpente et couverture" loading="lazy"></div>
+   <div class="gal-item"><img src="img/escalier1.jpg" alt="Mezzanine et garde-corps bois" loading="lazy"></div>
+   <div class="gal-item"><img src="img/salle1.jpg" alt="Chantier collectivité" loading="lazy"></div>
+  </div>
+ </div>
+</section>
+
+<section class="cta">
+ <h2>Un projet de construction ou de rénovation ?</h2>
+ <p>Contactez-nous pour un devis gratuit. Nous intervenons en Isère et dans les départements voisins.</p>
+ <a href="tel:0476450845" class="btn btn-white">Appeler le 04 76 45 08 45</a>
+</section>
+
+<section class="section" id="contact">
+ <div class="container">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-sub">Retrouvez-nous à Allevard-les-Bains ou contactez-nous pour un devis.</p>
+  <div class="contact-grid">
+   <div class="contact-info">
+    <h3>Reverdy Charpente SARL</h3>
+    <div class="c-item">
+     <div class="ico">&#128205;</div>
+     <div>
+      <strong>Adresse</strong>
+      <span>33, avenue Louis Gerin<br>38580 Allevard-les-Bains</span>
+     </div>
+    </div>
+    <div class="c-item">
+     <div class="ico">&#128222;</div>
+     <div>
+      <strong>Téléphone</strong>
+      <a href="tel:0476450845">04 76 45 08 45</a>
+     </div>
+    </div>
+    <div class="c-item">
+     <div class="ico">&#9993;</div>
+     <div>
+      <strong>Email</strong>
+      <a href="mailto:reverdy.charpente@orange.fr">reverdy.charpente@orange.fr</a>
+     </div>
+    </div>
+    <div class="c-item">
+     <div class="ico">&#128338;</div>
+     <div>
+      <strong>Horaires</strong>
+      <span>Du lundi au vendredi : 7h30 - 17h30</span>
+     </div>
+    </div>
+   </div>
+   <div class="contact-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.5!2d6.0753!3d45.3953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478a8d3e6c9e0001%3A0x0!2s33+avenue+Louis+Gerin+38580+Allevard!5e0!3m2!1sfr!2sfr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Reverdy Charpente"></iframe>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer class="footer">
+ <p>&copy; 2026 Reverdy Charpente SARL — SIREN 353 331 770 — 33, av. Louis Gerin, 38580 Allevard-les-Bains</p>
+</footer>
+
+</body>
+</html>
